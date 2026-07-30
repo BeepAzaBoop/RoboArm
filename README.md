@@ -4,7 +4,6 @@ A joystick-controlled robotic arm built on an Arduino microcontroller. Two analo
  
 <p align="center">
   <img src="resources/roboarm.gif" width="45%" alt="RoboArm Demo" /> 
-  <img src="resources/claw.gif" width="20%" alt="Claw Demo" />
 </p>
 ## Overview
  
@@ -41,6 +40,7 @@ Most beginner joystick-servo projects map joystick position directly to servo an
 1. **Sampling**: Every 5ms, the raw analog joystick values for X and Y are read, inverted, and pushed into a 4-sample circular buffer per axis. The buffer maintains a running total so the average is always O(1) to compute.
 2. **Control loop**: Every 20ms, the buffered average is compared against a dead-zone band. Outside the dead zone, the distance from the threshold is scaled down into a small speed value, which is added to the servo's current position each cycle — this is what makes it velocity control rather than position control. The result is clamped to the servo's safe pulse range (800–2000µs).
 3. **Claw**: Read directly and mapped linearly (0–1023 → 0–180°) each loop iteration — no smoothing, since immediate response is more useful for gripping.
+<img src="resources/claw.gif" width="20%" alt="Claw Demo" />
 4. **Debug output**: Every 100ms, current averages, servo pulse widths, and speed values are printed over serial for tuning/debugging.
 ## CAD
 
