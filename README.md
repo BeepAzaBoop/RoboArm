@@ -2,8 +2,7 @@
  
 A joystick-controlled robotic arm built on an Arduino microcontroller. Two analog joysticks drive smooth, velocity-based movement across two axes, while a third analog input controls a servo-driven claw. The mechanical base and structure were designed in CAD.
  
-![RoboArm demo](resources/roboarm.gif)
-![Claw demo in isolation](resources/claw.gif)
+<img src="roboarm.gif" width="49%" /> <img src="claw.gif" width="49%" />
 
  
 ## Overview
