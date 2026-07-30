@@ -4,7 +4,7 @@ A joystick-controlled robotic arm built on an Arduino microcontroller. Two analo
  
 <p align="center">
   <img src="resources/roboarm.gif" width="45%" alt="RoboArm Demo" /> 
-  <img src="resources/claw.gif" width="45%" alt="Claw Demo" />
+  <img src="resources/claw.gif" width="20%" alt="Claw Demo" />
 </p>
 ## Overview
  
