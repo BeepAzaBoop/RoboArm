@@ -2,9 +2,10 @@
  
 A joystick-controlled robotic arm built on an Arduino microcontroller. Two analog joysticks drive smooth, velocity-based movement across two axes, while a third analog input controls a servo-driven claw. The mechanical base and structure were designed in CAD.
  
-<img src="resources/roboarm.gif" width="45%" /> <img src="resources/claw.gif" width="45%" />
-
- 
+<p align="center">
+  <img src="resources/roboarm.gif" width="45%" alt="RoboArm Demo" /> 
+  <img src="resources/claw.gif" width="45%" alt="Claw Demo" />
+</p>
 ## Overview
  
 Most beginner joystick-servo projects map joystick position directly to servo angle. RoboArm instead uses **velocity-based control**: joystick deflection sets how *fast* the arm moves, not where it points. Combined with dead-zone filtering and a rolling average filter on the analog inputs, this produces smoother, drift-free motion instead of jittery, twitchy movement.
